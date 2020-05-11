@@ -23,14 +23,13 @@
 	public function renovarSenha(){
 		$this->senha = "123456";
 	}
-	//public function addUsuario($nome,$email,$login,$senha,$dataCadastro,$ativo){//estes dois campos, vc não esta recebendo, eles nascem aqui nesta função $dataCadastro,$ativo
 	public function addUsuario($nome,$email,$login,$senha){
-		$this->nome = $nome;//faltou o $ e o ;
-		$this->email = $email;//faltou o $ e o ;
-		$this->login = $login;//faltou o $ e o ;
-		$this->senha = $senha;//faltou o $ e o ;
-		$this->dataCadastro = date("Y-m-d");// o Y aqui, é caixa alta para que ele pegue ano com 4 digitos.
-		$this->ativo = 0;//faltou o $
+		$this->nome = $nome;
+		$this->email = $email;
+		$this->login = $login;
+		$this->senha = $senha;
+		$this->dataCadastro = date("Y-m-d");
+		$this->ativo = 0;
 
 	}
 }
